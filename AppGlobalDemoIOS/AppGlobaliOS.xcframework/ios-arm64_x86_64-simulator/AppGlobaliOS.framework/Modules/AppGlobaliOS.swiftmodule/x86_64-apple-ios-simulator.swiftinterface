@@ -16,3 +16,7 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
+extension UIKit.UIApplication {
+  @_Concurrency.MainActor(unsafe) public class func getTopMostViewController() -> UIKit.UIViewController?
+  @_Concurrency.MainActor(unsafe) public class func showAlert(title: Swift.String = "", message: Swift.String)
+}

@@ -102,9 +102,7 @@ class ProductViewController: UIViewController {
                 print("Error writing document: \(err)")
             } else {
                 print("Document successfully written!")
-                let alert = UIAlertController(title: "", message: "Product Purchased!", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "Okay", style: .default))
-                self.navigationController?.present(alert, animated: true)
+                UIApplication.showAlert(message: "Product Purchased!")
             }
         }
 
@@ -119,14 +117,10 @@ class ProductViewController: UIViewController {
         ref.child("ProductPurchase").childByAutoId().setValue(dic) { (error, reference) in
             if let error = error {
                 print("Error sending data to Firebase: \(error.localizedDescription)")
-                let alert = UIAlertController(title: "", message: "Error sending data to Firebase: \(error.localizedDescription)", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "Okay", style: .default))
-                self.navigationController?.present(alert, animated: true)
+                UIApplication.showAlert(message: "Error sending data to Firebase: \(error.localizedDescription)")
             } else {
                 print("Data successfully sent to Firebase!")
-                let alert = UIAlertController(title: "", message: "Product Purchased!", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "Okay", style: .default))
-                self.navigationController?.present(alert, animated: true)
+                UIApplication.showAlert(message: "Product Purchased!")
             }
         }
     }

@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D177A63B2C952DEE00FED57D /* AppGlobaliOS.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D177A6392C952DE200FED57D /* AppGlobaliOS.xcframework */; };
-		D177A63C2C952DEE00FED57D /* AppGlobaliOS.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D177A6392C952DE200FED57D /* AppGlobaliOS.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D176AC6C2C959BCA003C8E87 /* AppGlobaliOS.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D176AC6B2C959BCA003C8E87 /* AppGlobaliOS.xcframework */; };
 		D188BE4E2C94759D0069644B /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D188BE4D2C94759D0069644B /* ProductViewController.swift */; };
 		D188BE532C9483920069644B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D188BE522C9483920069644B /* FirebaseAnalytics */; };
 		D188BE552C9483920069644B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D188BE542C9483920069644B /* FirebaseAuth */; };
@@ -33,7 +32,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D177A63C2C952DEE00FED57D /* AppGlobaliOS.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,7 +39,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D177A6392C952DE200FED57D /* AppGlobaliOS.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AppGlobaliOS.xcframework; sourceTree = "<group>"; };
+		D176AC6B2C959BCA003C8E87 /* AppGlobaliOS.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AppGlobaliOS.xcframework; sourceTree = "<group>"; };
 		D188BE4D2C94759D0069644B /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		F946159C2C91F2D7008E20D5 /* AppGlobalDemoIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppGlobalDemoIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F946159F2C91F2D7008E20D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +61,7 @@
 				D188BE592C9483920069644B /* FirebaseDatabase in Frameworks */,
 				D188BE532C9483920069644B /* FirebaseAnalytics in Frameworks */,
 				D188BE572C9483920069644B /* FirebaseCrashlytics in Frameworks */,
-				D177A63B2C952DEE00FED57D /* AppGlobaliOS.xcframework in Frameworks */,
+				D176AC6C2C959BCA003C8E87 /* AppGlobaliOS.xcframework in Frameworks */,
 				D188BE552C9483920069644B /* FirebaseAuth in Frameworks */,
 				D188BE5D2C9483920069644B /* FirebaseStorage in Frameworks */,
 				D188BE5B2C9483920069644B /* FirebaseFirestore in Frameworks */,
@@ -93,7 +91,7 @@
 		F946159E2C91F2D7008E20D5 /* AppGlobalDemoIOS */ = {
 			isa = PBXGroup;
 			children = (
-				D177A6392C952DE200FED57D /* AppGlobaliOS.xcframework */,
+				D176AC6B2C959BCA003C8E87 /* AppGlobaliOS.xcframework */,
 				F94615BD2C91F53C008E20D5 /* GoogleService-Info.plist */,
 				F94615BE2C91F53C008E20D5 /* ListViewController.swift */,
 				F946159F2C91F2D7008E20D5 /* AppDelegate.swift */,
@@ -384,6 +382,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -412,6 +411,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
