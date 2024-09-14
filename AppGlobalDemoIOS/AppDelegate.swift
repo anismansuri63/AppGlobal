@@ -8,7 +8,6 @@
 import UIKit
 import Firebase
 import AppGlobaliOS
-import Trackingplan
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
