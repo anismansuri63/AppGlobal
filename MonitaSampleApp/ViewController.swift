@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import AppGlobaliOS
+import MonitaSDK
 import FirebaseCore
 import FirebaseAnalytics
 import FirebaseAuth
@@ -59,7 +59,7 @@ class ViewController: UIViewController {
     @IBAction func getConfigListAction(_ sender: UIButton) {
         
         let viewCon = self.storyboard!.instantiateViewController(identifier: "ListViewController") as! ListViewController
-        viewCon.string = AppGlobal.getConfigList()
+        viewCon.string = MonitaSDK.getConfigList()
         viewCon.allRequest = nil
         self.navigationController?.pushViewController(viewCon, animated: true)
         
@@ -68,7 +68,7 @@ class ViewController: UIViewController {
         
 
         let viewCon = self.storyboard!.instantiateViewController(identifier: "ListViewController") as! ListViewController
-        viewCon.string = AppGlobal.getInterceptedRequestList()
+        viewCon.string = MonitaSDK.getInterceptedRequestList()
         viewCon.allRequest = false
         self.navigationController?.pushViewController(viewCon, animated: true)
     }
@@ -80,7 +80,7 @@ class ViewController: UIViewController {
         ])
         Analytics.logEvent("Custom Log", parameters: ["Time" : "Value"])
         let viewCon = self.storyboard!.instantiateViewController(identifier: "ListViewController") as! ListViewController
-        viewCon.string = AppGlobal.getInterceptedRequestListAll()
+        viewCon.string = MonitaSDK.getInterceptedRequestListAll()
         viewCon.allRequest = true
         self.navigationController?.pushViewController(viewCon, animated: true)
     }
