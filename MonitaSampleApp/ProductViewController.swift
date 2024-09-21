@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MonitaSDK
 import FirebaseDatabase
 import FirebaseFirestore
 

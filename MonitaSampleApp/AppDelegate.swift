@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        MonitaSDK.configure(token: "")
+        MonitaSDK.configure()
         FirebaseApp.configure()
 
         //Crashlytics.crashlytics().setCrashlyticsCollectionEnabled(true)

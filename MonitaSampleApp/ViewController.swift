@@ -6,13 +6,13 @@
 //
 
 import UIKit
-import MonitaSDK
 import FirebaseCore
 import FirebaseAnalytics
 import FirebaseAuth
 import FirebaseCrashlytics
 import FirebaseDatabase
 import FirebaseDatabase
+import MonitaSDK
 
 class ViewController: UIViewController {
     @IBOutlet var textFieldName, textFieldAge: UITextField!

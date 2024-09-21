@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAnalytics
+import MonitaSDK
 class ListViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     var string = ""
